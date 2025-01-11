@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.redstoned.aaproxy.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"AdvancementManagerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
