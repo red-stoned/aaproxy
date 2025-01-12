@@ -15,7 +15,7 @@
 		"sources": "https://github.com/red_stoned/aaproxy",
 		"issues": "https://github.com/red_stoned/aaproxy/issues"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/aaproxy/icon.png",
 	"environment": "*",
 	"entrypoints": {
