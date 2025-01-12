@@ -28,7 +28,7 @@ import net.minecraft.util.Util;
 
 public class AAProxy implements ClientModInitializer {
 	private static final KeyBinding reload_kb = new KeyBinding("key.aaproxy.reload", GLFW.GLFW_KEY_UNKNOWN, "key.categories.aaproxy");
-	private static final KeyBinding toggle_kb = new KeyBinding("key.aaproxy.toggle", GLFW.GLFW_KEY_F4, "key.categories.aaproxy");
+	private static final KeyBinding toggle_kb = new KeyBinding("key.aaproxy.toggle", GLFW.GLFW_KEY_F6, "key.categories.aaproxy");
 	public static File root = new File(new File(MinecraftClient.getInstance().runDirectory, "aaproxy"), "advancements");;
 	public static AAProxyConfig CONFIG = new AAProxyConfig();
 
