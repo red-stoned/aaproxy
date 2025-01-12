@@ -2,15 +2,18 @@
 	"schemaVersion": 1,
 	"id": "aatool_proxy",
 	"version": "${version}",
-	"name": "aatool_proxy",
+	"name": "AAProxy",
 	"description": "Mod to allow AATool to work with multiplayer.",
 	"authors": [
 		"Galiano"
 	],
+	"contributors": [
+		"Kroojel"
+	],
 	"contact": {
 		"homepage": "https://redstoned.dev",
-		"sources": "https://github.com/red_stoned/aatool_proxy",
-		"issues": "https://github.com/red_stoned/aatool_proxy/issues"
+		"sources": "https://github.com/red_stoned/aaproxy",
+		"issues": "https://github.com/red_stoned/aaproxy/issues"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/aaproxy/icon.png",
@@ -18,7 +21,10 @@
 	"entrypoints": {
 		"main": [],
 		"client": [
-			"com.redstoned.aaproxy.proxyClient"
+			"com.redstoned.aaproxy.AAProxy"
+		],
+		"modmenu": [
+			"com.redstoned.aaproxy.config.AAProxyMM"
 		]
 	},
 	"mixins": [
@@ -31,7 +37,8 @@
 		"fabricloader": ">=0.16.9",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cloth-config": "~17.0.144"
 	},
 	"accessWidener": "aaproxy.accesswidener"
 }

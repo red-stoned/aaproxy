@@ -1,4 +1,14 @@
 {
-	"aaproxy.reload": "Force Reload Advancements",
-	"key.categories.aaproxy": "AATool Proxy"
+	"key.categories.aaproxy": "AAProxy",
+	"key.aaproxy.reload": "Force Update Advancements",
+	"key.aaproxy.toggle": "Enable/Disable Proxy",
+	"msg.aaproxy.enabled": "[AAProxy] Proxy Enabled: %s",
+	"msg.aaproxy.disabled": "[AAProxy] Proxy Disabled",
+	"text.autoconfig.aaproxy.title": "AAProxy",
+	"text.autoconfig.aaproxy.option.globalEnabled": "Proxy Enabled",
+	"text.autoconfig.aaproxy.option.globalEnabled.@Tooltip": "proxy toggle - IF THIS IS OFF NOTHING WILL HAPPEN!",
+	"text.autoconfig.aaproxy.option.proxySingleplayer": "Allow Proxy in singleplayer",
+	"text.autoconfig.aaproxy.option.proxySingleplayer.@Tooltip": "AATool works for singleplayer directly, but if for some reason you wanted to you could turn this on",
+	"text.autoconfig.aaproxy.option.roProxyFolder": "AAProxy folder",
+	"text.autoconfig.aaproxy.option.roProxyFolder.@Tooltip": "(READ ONLY) This is the folder to use for 'Track Specific World' in AATool"
 }

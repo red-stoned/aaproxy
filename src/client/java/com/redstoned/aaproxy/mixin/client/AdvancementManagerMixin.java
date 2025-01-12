@@ -11,14 +11,13 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientAdvancementManager;
 import net.minecraft.network.packet.s2c.play.AdvancementUpdateS2CPacket;
 
-import com.redstoned.aaproxy.proxyClient;
+import com.redstoned.aaproxy.AAProxy;
 
 @Environment(EnvType.CLIENT)
 @Mixin(ClientAdvancementManager.class)
 public class AdvancementManagerMixin {
 	@Inject(at = @At("TAIL"), method = "onAdvancements")
 	private void advancementChanged(AdvancementUpdateS2CPacket packet, CallbackInfo ci) {
-		System.out.println("advancements changed");
-		proxyClient.UpdateAdvancementJson(MinecraftClient.getInstance());
+		AAProxy.UpdateAdvancements(MinecraftClient.getInstance());
 	}
 }
