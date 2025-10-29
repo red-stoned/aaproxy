@@ -34,11 +34,11 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=0.16.9",
-		"minecraft": "~1.21.4",
+		"fabricloader": ">=0.17.0",
+		"minecraft": "~1.21.10",
 		"java": ">=21",
 		"fabric-api": "*",
-		"cloth-config": "~17.0.144"
+		"cloth-config": "*"
 	},
 	"accessWidener": "aaproxy.accesswidener"
 }

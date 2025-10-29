@@ -1,5 +1,5 @@
 {
-	"key.categories.aaproxy": "AAProxy",
+	"key.category.aaproxy.gen": "AAProxy",
 	"key.aaproxy.reload": "Force Update Advancements",
 	"key.aaproxy.toggle": "Enable/Disable Proxy",
 	"msg.aaproxy.enabled": "[AAProxy] Proxy Enabled: %s",

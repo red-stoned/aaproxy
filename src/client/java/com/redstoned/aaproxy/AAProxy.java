@@ -3,6 +3,7 @@ package com.redstoned.aaproxy;
 import java.io.File;
 import java.io.FileWriter;
 
+import net.minecraft.util.Identifier;
 import org.lwjgl.glfw.GLFW;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
@@ -27,8 +28,9 @@ import net.minecraft.text.ClickEvent.Action;
 import net.minecraft.util.Util;
 
 public class AAProxy implements ClientModInitializer {
-	private static final KeyBinding reload_kb = new KeyBinding("key.aaproxy.reload", GLFW.GLFW_KEY_UNKNOWN, "key.categories.aaproxy");
-	private static final KeyBinding toggle_kb = new KeyBinding("key.aaproxy.toggle", GLFW.GLFW_KEY_F6, "key.categories.aaproxy");
+	private static final KeyBinding.Category cat = KeyBinding.Category.create(Identifier.of("aaproxy", "gen"));
+	private static final KeyBinding reload_kb = new KeyBinding("key.aaproxy.reload", GLFW.GLFW_KEY_UNKNOWN, cat);
+	private static final KeyBinding toggle_kb = new KeyBinding("key.aaproxy.toggle", GLFW.GLFW_KEY_F6, cat);
 	public static File root = new File(new File(MinecraftClient.getInstance().runDirectory, "aaproxy"), "advancements");;
 	public static AAProxyConfig CONFIG = new AAProxyConfig();
 
@@ -107,8 +109,8 @@ public class AAProxy implements ClientModInitializer {
 		MutableText m1 = Text.literal("folder");
 		m1.setStyle(
 			Style.EMPTY
-			.withClickEvent(new ClickEvent(Action.COPY_TO_CLIPBOARD, root.getParent()))
-			.withHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, Text.literal("Click to copy path")))
+			.withClickEvent(new ClickEvent.CopyToClipboard(root.getParent()))
+			.withHoverEvent(new HoverEvent.ShowText(Text.literal("Click to copy path")))
 			.withUnderline(true)
 		);
 		return msg("msg.aaproxy.enabled", m1);
